@@ -1,5 +1,7 @@
 const TAX_RATE:f64 = 7.25;
 
+type Meters = i32;
+
 fn main() {
 
     // let apples = 50;
@@ -17,10 +19,15 @@ fn main() {
     // println!("I now plan to do {gym_reps} reps");
 
 //     Variable shadowing
-    let grams_of_protein = "100.345";
-    let grams_of_protein = 100.345;
-    let grams_of_protein = 100;
-
-    let income = 100000;
-    println!("THe tax rate is {income} and my tax rate is {TAX_RATE}")
+//     let grams_of_protein = "100.345";
+//     let grams_of_protein = 100.345;
+//     let grams_of_protein = 100;
+// 
+//     let income = 100000;
+//     println!("THe tax rate is {income} and my tax rate is {TAX_RATE}")
+//     
+//     let mile_race_length: Meters = 1600;
+//     let two_mile_race_length: Meters = 3200;
+//     println!("A one mile race is {mile_race_length} and two_mile_race_length is {two_mile_race_length}");
+    
 }
