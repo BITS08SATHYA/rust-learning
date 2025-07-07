@@ -1,3 +1,5 @@
+#![allow(unused_variables)]
+
 const TAX_RATE:f64 = 7.25;
 
 type Meters = i32;
