@@ -100,7 +100,19 @@ fn main() {
 //     let remainder = 8 % 2;
 //     println!("{remainder}");
 
-    let mut year = 2025;
-    year += 1;
-    println!("The new year is {year}");
+    // let mut year = 2025;
+    // year += 1;
+    // println!("The new year is {year}");
+
+    let is_handsome = true;
+    let is_silly = false;
+
+    println!("Handsome: {is_handsome}. Silly: {is_silly}");
+
+    let age = -21i8;
+    let is_young = age < 35;
+    println!("{is_young}");
+    println!("{} - {}", age.is_positive(), age.is_negative());
+
+
 }
