@@ -112,4 +112,12 @@ fn main() {
     println!("I am {age} years old, Can i not see this scary movie? {can_see_rate_r_movie} ");
 
 
+    let employee = ("Molly", 34, "Marketing");
+
+    let (name, age, department) = employee;
+
+    println!("Name: {name}, Age: {age}, Department: {department}");
+
+    println!("{employee:#?}");
+
 }
