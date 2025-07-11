@@ -78,10 +78,25 @@ fn main() {
     // println!("{}", pi.round());
 
 //      Casting as keyword
-    let miles_away = 50;
-    let miles_away_i8 = miles_away as u8;
-    let miles_away_int = miles_away as i32;
+//     let miles_away = 50;
+//     let miles_away_i8 = miles_away as u8;
+//     let miles_away_int = miles_away as i32;
+//
+//     println!("Miles away: {}", miles_away_int);
 
-    println!("Miles away: {}", miles_away_int);
+//     Math Operations
+    let addition = 5 + 4;
+    let subtraction = 10  - 6;
+    let multiplication = 3 * 4;
 
+    println!("Addition: {addition}, subtraction: {subtraction}, multiplication: {multiplication}");
+
+    let floor_division = 5 / 3;
+    println!("{floor_division}");
+
+    let decimal_division = 5.0/3.0;
+    println!("{decimal_division:.2}");
+
+    let remainder = 8 % 2;
+    println!("{remainder}");
 }
