@@ -70,11 +70,18 @@ fn main() {
 
 //     floats
 //     let pi = 3.14159;
-    let pi = 3.14159265358979322384f64;
-    println!("The current value of pi is: {:.4}", pi);
+//     let pi = 3.14159265358979322384f64;
+//     println!("The current value of pi is: {:.4}", pi);
 
     // println!("{}", pi.floor());
     // println!("{}", pi.ceil());
     // println!("{}", pi.round());
+
+//      Casting as keyword
+    let miles_away = 50;
+    let miles_away_i8 = miles_away as u8;
+    let miles_away_int = miles_away as i32;
+
+    println!("Miles away: {}", miles_away_int);
 
 }
