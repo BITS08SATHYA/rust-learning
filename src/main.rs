@@ -71,10 +71,10 @@ fn main() {
 //     floats
 //     let pi = 3.14159;
     let pi = 3.14159265358979322384f64;
-    println!("The current value of pi is: {}", pi);
-    
-    println!("{}", pi.floor());
-    println!("{}", pi.ceil());
-    println!("{}", pi.round());
+    println!("The current value of pi is: {:.4}", pi);
+
+    // println!("{}", pi.floor());
+    // println!("{}", pi.ceil());
+    // println!("{}", pi.round());
 
 }
