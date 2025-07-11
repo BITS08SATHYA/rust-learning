@@ -104,20 +104,40 @@ fn main() {
     // year += 1;
     // println!("The new year is {year}");
 
-    println!("{}", !true);
-    println!("{}", !false);
+    // println!("{}", !true);
+    // println!("{}", !false);
+    //
+    // let age = 13;
+    // let can_see_rate_r_movie = age >= 17;
+    // println!("I am {age} years old, Can i not see this scary movie? {can_see_rate_r_movie} ");
+    //
+    //
+    // let employee = ("Molly", 34, "Marketing");
+    //
+    // let (name, age, department) = employee;
+    //
+    // println!("Name: {name}, Age: {age}, Department: {department}");
+    //
+    // println!("{employee:#?}");
 
-    let age = 13;
-    let can_see_rate_r_movie = age >= 17;
-    println!("I am {age} years old, Can i not see this scary movie? {can_see_rate_r_movie} ");
+    let month_days = 1..31;
 
+    let month_days = 1..=31;
+    println!("Month days: {month_days:?}");
 
-    let employee = ("Molly", 34, "Marketing");
+    for number in month_days {
+        println!("{number}")
+    }
 
-    let (name, age, department) = employee;
+    let letters = 'a'..='z';
 
-    println!("Name: {name}, Age: {age}, Department: {department}");
+    // for letter in letters {
+    //     println!("{letter}");
+    // }
 
-    println!("{employee:#?}");
+    let colors = ["Red", "Green", "Blue"];
 
+    for color in colors {
+        println!("{color} is a great color!")
+    }
 }
