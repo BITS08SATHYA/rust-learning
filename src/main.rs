@@ -186,31 +186,59 @@ fn main() {
     //     println!("School's closed")
     // }
 
-    let evaluation = true;
-
-    let value = match evaluation {
-
-        true => {
-            println!("The value is true");
-        }
-        false => {
-            println!("The value is false");
-        }
-
-    };
+    // let evaluation = true;
+    //
+    // let value = match evaluation {
+    //
+    //     true => {
+    //         println!("The value is true");
+    //     }
+    //     false => {
+    //         println!("The value is false");
+    //     }
+    //
+    // };
 
     // println!("{value}");
 
-}
+    let number = 9;
 
+    // match number {
+    //     2 | 4 | 6 | 8 => println!("{number} as even"),
+    //     1 | 3 | 5 => println!("{number} as odd"),
+    //     _ => println!("unknown for me"),
+    // }
 
-fn even_or_odd(number: i32) {
-    if number % 2 == 0{
-        "even";
-    }else{
-        "odd";
+    // match number {
+    //     value  if value % 2 == 0 => println!("{value} is an even number"),
+    //     x if x % 2 == 0 => println!("{x} is an odd number"),
+    //     _ => println!("Unknown number"),
+    // }
+
+    let mut seconds = 10;
+
+    loop {
+
+        if seconds == 0{
+            println!("Blastoff!");
+            break;
+        }
+
+        println!("{seconds} seconds to blastoff...");
+        seconds -= 1
     }
 
-    let result = if number % 2 == 0 {"even"} else {"odd"};
-    println!("The numbe is {result}");
+
 }
+
+
+// fn even_or_odd(number: i32) {
+//     if number % 2 == 0{
+//         "even";
+//     }else{
+//         "odd";
+//     }
+//
+//     let result = if number % 2 == 0 {"even"} else {"odd"};
+//     println!("The numbe is {result}");
+// }
