@@ -217,12 +217,12 @@ fn main() {
 
     let mut seconds = 21;
 
-    loop {
+    while seconds > 0 {
 
-        if seconds == 0{
-            println!("Blastoff!");
-            break;
-        }
+        // if seconds == 0{
+        //     println!("Blastoff!");
+        //     break;
+        // }
         
         if seconds % 2 == 0{
             println!("{seconds} seconds (even number), skipping 3 seconds..");
