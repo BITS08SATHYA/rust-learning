@@ -201,7 +201,7 @@ fn main() {
 
     // println!("{value}");
 
-    let number = 9;
+    // let number = 9;
 
     // match number {
     //     2 | 4 | 6 | 8 => println!("{number} as even"),
@@ -215,13 +215,19 @@ fn main() {
     //     _ => println!("Unknown number"),
     // }
 
-    let mut seconds = 10;
+    let mut seconds = 21;
 
     loop {
 
         if seconds == 0{
             println!("Blastoff!");
             break;
+        }
+        
+        if seconds % 2 == 0{
+            println!("{seconds} seconds (even number), skipping 3 seconds..");
+            seconds -= 3;
+            continue;
         }
 
         println!("{seconds} seconds to blastoff...");
