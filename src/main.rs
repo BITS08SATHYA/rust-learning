@@ -215,26 +215,37 @@ fn main() {
     //     _ => println!("Unknown number"),
     // }
 
-    let mut seconds = 21;
+    // let mut seconds = 21;
+    //
+    // while seconds > 0 {
+    //
+    //     // if seconds == 0{
+    //     //     println!("Blastoff!");
+    //     //     break;
+    //     // }
+    //
+    //     if seconds % 2 == 0{
+    //         println!("{seconds} seconds (even number), skipping 3 seconds..");
+    //         seconds -= 3;
+    //         continue;
+    //     }
+    //
+    //     println!("{seconds} seconds to blastoff...");
+    //     seconds -= 1
+    // }
 
-    while seconds > 0 {
+    countdown(5);
 
-        // if seconds == 0{
-        //     println!("Blastoff!");
-        //     break;
-        // }
-        
-        if seconds % 2 == 0{
-            println!("{seconds} seconds (even number), skipping 3 seconds..");
-            seconds -= 3;
-            continue;
-        }
+}
 
-        println!("{seconds} seconds to blastoff...");
-        seconds -= 1
+fn countdown(seconds: i32){
+
+    if seconds == 0{
+        println!("Blastoff");
+    }else{
+        println!("{} seconds to blastoff...", seconds);
+        countdown(seconds - 1);
     }
-
-
 }
 
 
