@@ -249,21 +249,33 @@ fn main() {
     // let year = time;
     //
     // println!("The time is {time}. It is the year {year}")
-
-    let text = String::new();
-    let candy = String::from("Kitkat");
-    // println!("{candy}");
-    
-    let mut name = String::from("Boris");
+    //
+    // let text = String::new();
+    // let candy = String::from("Kitkat");
+    // // println!("{candy}");
+    //
+    // let mut name = String::from("Boris");
+    // // println!("{name}");
+    //
+    // name.push_str(" Pask");
     // println!("{name}");
+    //
+    // let person = String::from("Boris");
+    // let genius = person.clone();
+    //
+    // println!("This is {person}");
+    //
+//      Reference and Borrowing
+    let my_stack_value = 2;
+    let my_integer_reference = &my_stack_value;
 
-    name.push_str(" Pask");
-    println!("{name}");
+    println!("{}", my_integer_reference);
+
+    let my_heap_value = String::from("Toyota");
+    let mut my_heap_reference = &my_heap_value;
     
-    let person = String::from("Boris");
-    let genius = person.clone();
+    println!("{}", my_heap_reference);
 
-    println!("This is {person}");
     
 }
 
