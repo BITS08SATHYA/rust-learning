@@ -131,9 +131,9 @@ fn main() {
     //
     // let letters = 'a'..='z';
     //
-    // // for letter in letters {
-    // //     println!("{letter}");
-    // // }
+    // for letter in letters {
+    //     println!("{letter}");
+    // }
     //
     // let colors = ["Red", "Green", "Blue"];
     //
@@ -234,19 +234,48 @@ fn main() {
     //     seconds -= 1
     // }
 
-    countdown(5);
+    // countdown(5);
 
+    // let age = 33;
+    //
+    // {
+    //     let is_handsome = true;
+    // }
+    //
+    // println!("{age}")
+
+
+    // let time = 2025;
+    // let year = time;
+    //
+    // println!("The time is {time}. It is the year {year}")
+
+    let text = String::new();
+    let candy = String::from("Kitkat");
+    // println!("{candy}");
+    
+    let mut name = String::from("Boris");
+    // println!("{name}");
+
+    name.push_str(" Pask");
+    println!("{name}");
+    
+    let person = String::from("Boris");
+    let genius = person.clone();
+
+    println!("This is {person}");
+    
 }
 
-fn countdown(seconds: i32){
-
-    if seconds == 0{
-        println!("Blastoff");
-    }else{
-        println!("{} seconds to blastoff...", seconds);
-        countdown(seconds - 1);
-    }
-}
+// fn countdown(seconds: i32){
+//
+//     if seconds == 0{
+//         println!("Blastoff");
+//     }else{
+//         println!("{} seconds to blastoff...", seconds);
+//         countdown(seconds - 1);
+//     }
+// }
 
 
 // fn even_or_odd(number: i32) {
