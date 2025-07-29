@@ -266,9 +266,9 @@ fn main() {
     // println!("This is {person}");
     //
 //      Reference and Borrowing
-    let my_stack_value = 2;
-    let my_integer_reference = &my_stack_value;
-    println!("{}", *my_integer_reference);
+//     let my_stack_value = 2;
+//     let my_integer_reference = &my_stack_value;
+//     println!("{}", *my_integer_reference);
 
 
     // let my_heap_value = String::from("Toyota");
@@ -277,9 +277,15 @@ fn main() {
     // println!("{}", my_heap_reference);
 
 //     Dereference Operator
-
+    
+    let apples = 6;
+    print_my_value(apples);
 
     
+}
+
+fn print_my_value(value: i32){
+    println!("Your value is {value}");
 }
 
 // fn countdown(seconds: i32){
