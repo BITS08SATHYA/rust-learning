@@ -300,12 +300,24 @@ fn main() {
     // ref1.push_str(" and sliver");
     // println!("{ref1} and {ref2}");
 
-    let mut coffee = String::from("Mocha");
+    // let mut coffee = String::from("Mocha");
+    //
+    // let a = &mut coffee;
+    // println!("{a}");
+    // let b = a;
+    // println!("{}", b);
 
-    let a = &mut coffee;
-    println!("{a}");
-    let b = a;
-    println!("{}", b);
+//     Dangling pointer
+//     let city = String::from("New York");
+
+    let registrations = (true, false, true);
+    let first = registrations.0;
+    // println!("{:?}", first);
+    println!("{first} and {registrations:?}");
+
+    let languages = (String::from("Rust"), String::from("JavaScript"));
+    let first = &languages.0;
+    println!("{first} and {languages:?}")
 
 }
 
