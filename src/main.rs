@@ -288,9 +288,16 @@ fn main() {
     // let cake1 = bake_cake();
     // println!("{}", cake1);
 
-    let mut current_meal = String::new();
-    add_flour(&mut current_meal);
-    show_my_meal(&current_meal);
+    // let mut current_meal = String::new();
+    // add_flour(&mut current_meal);
+    // show_my_meal(&current_meal);
+
+//   multiple  immutable reference
+    let car = String::from("Red");
+    let ref1 = &car;
+    let ref2 = &car;
+    println!("{ref1} and {ref2} and {}", &car);
+
 
 }
 
