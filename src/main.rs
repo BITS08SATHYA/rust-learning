@@ -293,10 +293,12 @@ fn main() {
     // show_my_meal(&current_meal);
 
 //   multiple  immutable reference
-    let car = String::from("Red");
-    let ref1 = &car;
-    let ref2 = &car;
-    println!("{ref1} and {ref2} and {}", &car);
+    let mut car = String::from("Red");
+    let ref1 = &mut car;
+
+    // let ref2 = &mut car;
+    // ref1.push_str(" and sliver");
+    // println!("{ref1} and {ref2}");
 
 
 }
