@@ -277,16 +277,50 @@ fn main() {
     // println!("{}", my_heap_reference);
 
 //     Dereference Operator
-    
-    let apples = 6;
-    print_my_value(apples);
 
-    
+    // let apples = 6;
+    // print_my_value(apples);
+
+    // let burger = String::from("Burger");
+    // // let meal = burger;
+    // add_fries(burger);
+
+    // let cake1 = bake_cake();
+    // println!("{}", cake1);
+
+    let mut current_meal = String::new();
+    add_flour(&mut current_meal);
+    show_my_meal(&current_meal);
+
 }
 
-fn print_my_value(value: i32){
-    println!("Your value is {value}");
+// meal: String
+// mut meal: String
+// meal: &String
+// meal: &mut String
+
+fn add_flour(meal: &mut String){
+    meal.push_str("Add Flour");
 }
+
+fn show_my_meal(meal: &String) {
+    println!("Meal Steps: {meal}");
+}
+
+// fn bake_cake() -> String {
+//     // let cake = String::from("Chocolate Mousse");
+//     String::from("Chocolate Mousse")
+//     // return cake;
+// }
+
+// fn add_fries(mut meal: String){
+//     meal.push_str(" Fries");
+//     println!("{}", meal);
+// }
+
+// fn print_my_value(value: i32){
+//     println!("Your value is {value}");
+// }
 
 // fn countdown(seconds: i32){
 //
